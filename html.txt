@@ -1,0 +1,52 @@
+<section id="recommend" class="recommend">
+
+    <h2>Get Your Packaging Recommendation</h2>
+
+    <p>Select the details of your food commodity</p>
+
+    <div class="form-box">
+
+        <label>🍅 Select Commodity</label>
+
+        <select id="commodity">
+            <option value="Tomato">Tomato</option>
+            <option value="Potato">Potato</option>
+            <option value="Onion">Onion</option>
+            <option value="Apple">Apple</option>
+            <option value="Banana">Banana</option>
+            <option value="Carrot">Carrot</option>
+        </select>
+
+
+        <label>🌡️ Storage Condition</label>
+
+        <select id="storage">
+            <option value="Room Temperature">
+                Room Temperature
+            </option>
+
+            <option value="Cold Storage">
+                Cold Storage
+            </option>
+        </select>
+
+
+        <label>📅 Expected Storage Duration</label>
+
+        <input
+            type="number"
+            id="days"
+            placeholder="Enter number of days"
+            min="1"
+        >
+
+
+        <button onclick="getRecommendation()">
+            🔍 Get Recommendation
+        </button>
+
+    </div>
+
+    <div id="result"></div>
+
+</section>
